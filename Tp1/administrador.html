@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Admin-Agregar Productos</title>
+
+    <style>
+    </style>
+</head>
+<body>
+
+    <main >
+        <section class="black bordo section_productos">
+            <div class="display_center padding-top1 gap3">
+                <button id="boton_General" class="amarillo boton_admin cursor">Productos Generales</button>
+                <button id="boton_Notebook" class="amarillo boton_admin cursor">Notebook</button>
+                <button id="boton_Monitor" class="amarillo boton_admin cursor">Monitor</button>
+            </div>
+            <!-- Formulario Productos generales -->
+            <form id="formGeneral" class="display_center formProducto oculto column">
+                <h1 class=" display_center padding-top1 white mayus bold">Productos Generales</h1>
+                <div class="formCol column display_flex width600 ">
+                    <input type="text" placeholder="Nombre del Producto" id="nombreProducto" class="color_formulario">
+                    <input type="text" placeholder="URL de la Imagen" id="imagen" class="color_formulario">
+                    <input type="text" placeholder="Marca" id="marca" class="color_formulario">
+                    <input type="number" placeholder="Precio ($)" id="precio" class="color_formulario">
+                    <input type="number" placeholder="Stock (unidades)" id="stock" class="color_formulario">
+                    <input type="number" placeholder="Cuotas" id="cuotas" class="color_formulario">
+                    <textarea rows="5" cols="30" placeholder="Descripción" id="descripcion" class="color_formulario"></textarea>
+                    
+                    <h3 class="white mayus bold">Garantía: </h3>
+                    <label class="white">Desde</label>
+                    <input type="date" id="fechaInicio" class="color_formulario">
+                    <label class="white">Hasta</label>
+                    <input type="date" id="fechaFinal" class="color_formulario">
+                    <textarea rows="5" cols="30" placeholder="Condiciones de garantía" id="condiciones" class="color_formulario"></textarea>  
+                </div>
+                <div class="display_flex gap3">
+                    <button type="submit" class="verdef boton_admin cursor">Crear Producto</button>
+                    <button id="eliminarUltimoProd" type="button" class="verdef boton_admin cursor">Eliminar Producto</button>
+                </div>
+            </form>
+            <!-- Formulario Notebook -->
+            <form id="formNotebook" class="display_center formProducto oculto column " >
+                <h1 class=" display_center padding-top1 white mayus  bold">Notebooks</h1>
+                <div class="columnas display_flex wrap">
+                    <div class="formCol column display_flex">
+                        <input type="text" placeholder="Nombre del Producto" id="nombreProducto" class="color_formulario">
+                        <input type="text" placeholder="URL de la Imagen" id="imagen" class="color_formulario">
+                        <input type="text" placeholder="Marca" id="marca" class="color_formulario">
+                        <input type="number" placeholder="Precio ($)" id="precio" class="color_formulario">
+                        <input type="number" placeholder="Stock (unidades)" id="stock" class="color_formulario">
+                        <input type="number" placeholder="Cuotas" id="cuotas" class="color_formulario">
+                        <textarea rows="5" cols="30" placeholder="Descripción" id="descripcion" class="color_formulario"></textarea>
+                        
+                        <h3 class="white mayus bold">Garantía: </h3>
+                        <label class="white">Desde</label>
+                        <input type="date" id="fechaInicio" class="color_formulario">
+                        <label class="white">Hasta</label>
+                        <input type="date" id="fechaFinal" class="color_formulario">
+                        <textarea rows="5" cols="30" placeholder="Condiciones de garantía" id="condiciones" class="color_formulario"></textarea>
+                    </div>
+                    
+                    <div class="formCol column display_flex">
+                        <input type="text" placeholder="Procesador" id="procesador" class="color_formulario">
+                        <input type="text" placeholder="Graficos" id="graficos" class="color_formulario">
+                        <input type="text" placeholder="Almacenamiento" id="almacenamiento" class="color_formulario">
+                        <input type="number" placeholder="Memoria (GB)" id="memoria" class="color_formulario">
+                        <input type="number" placeholder="Pantalla" id="pantalla" class="color_formulario">
+                        <input type="text" placeholder="Sistema operativo" id="sist_operativo" class="color_formulario">
+                        <input type="text" placeholder="Teclado" id="teclado" class="color_formulario">
+                        <input type="text" placeholder="Conectividad" id="conectividad" class="color_formulario">
+                        <input type="text" placeholder="Puertos" id="puertos" class="color_formulario">
+                    </div>
+                </div>
+                <div class="display_flex gap3">
+                    <button type="submit" class="verdef boton_admin cursor">Crear Producto</button>
+                    <button id="eliminarUltimoNote" type="button" class="verdef boton_admin cursor">Eliminar Producto</button>
+                </div>
+            </form>
+            <!-- Formulario Monitor -->
+            <form id="formMonitor" class="display_center formProducto oculto column">
+                <h1 class=" display_center padding-top1 white mayus bold">Monitores</h1>
+                <div class="columnas display_flex wrap">
+                    <div class="formCol column display_flex">
+                        <input type="text" placeholder="Nombre del Producto" id="nombreProducto" class="color_formulario">
+                        <input type="text" placeholder="URL de la Imagen" id="imagen" class="color_formulario">
+                        <input type="text" placeholder="Marca" id="marca" class="color_formulario">
+                        <input type="number" placeholder="Precio ($)" id="precio" class="color_formulario">
+                        <input type="number" placeholder="Stock (unidades)" id="stock" class="color_formulario">
+                        <input type="number" placeholder="Cuotas" id="cuotas" class="color_formulario">
+                        <textarea rows="5" cols="30" placeholder="Descripción" id="descripcion" class="color_formulario"></textarea>
+                        <h3 class="white mayus bold">Garantía: </h3>
+                        <label class="white">Desde</label>
+                        <input type="date" id="fechaInicio" class="color_formulario">
+                        <label class="white">Hasta</label>
+                        <input type="date" id="fechaFinal" class="color_formulario">
+                        <textarea rows="5" cols="30" placeholder="Condiciones de garantía" id="condiciones" class="color_formulario"></textarea>
+                    </div>
+                    <div class="formCol column display_flex">
+                        <input type="number" placeholder="Pulgadas" id="pulgadas" class="color_formulario">
+                        <input type="text" placeholder="Tipo" id="tipo" class="color_formulario">
+                        <input type="text" placeholder="Resolucion" id="resolucion" class="color_formulario">
+                        <input type="text" placeholder="Relacion de aspecto" id="relacion_aspecto" class="color_formulario">
+                        <input type="number" placeholder="Tiempo de respuesta (ms)" id="tiempo_respuesta" class="color_formulario">
+                        <input type="number" placeholder="FPS (Hz)" id="fps" class="color_formulario">
+                        <input type="text" placeholder="Entrada de señal" id="signal_input" class="color_formulario">
+                        <input type="number" placeholder="Brillo (Nitz)" id="brillo" class="color_formulario">
+                    </div>
+                </div>
+                <div class="display_flex gap3">
+                    <button type="submit" class="verdef boton_admin cursor">Crear Producto</button>
+                    <button id="eliminarUltimoMoni" type="button" class="verdef boton_admin cursor">Eliminar Producto</button>
+                </div>
+            </form>
+        </section>
+        <section class="black linea header_total bordo section_servicios">
+            <div  class="display_center  padding-top1 gap3 ">
+                <button id="boton_Reparacion" class="cursor amarillo boton_admin ">Reparación</button>
+                <button id="boton_Asesoramiento"  class="cursor amarillo boton_admin ">Asesoramiento Técnico</button>
+                <button id="boton_Delivery"  class="cursor amarillo boton_admin ">Delivery</button>
+            </div>
+            <!-- Formulario Reparación -->
+            <form id="formReparacion" class="formulario oculto display_center column formProducto">
+                <h3 class="display_center padding-top1 white mayus bold " >Reparación</h3>
+                <div class="formCol column display_flex width65">
+                    <input type="text" id="producto_reparado" placeholder="Producto a reparar" class="color_formulario">
+                    <input type="text" id="imagen" placeholder="URL de imagen del prodcuto a reparar" class="color_formulario">
+                    <input type="number" id="costo" placeholder="Costo" class="color_formulario">
+                    <input type="number" id="duracion_estimada" placeholder="Duración" class="color_formulario">
+                    <input type="text" id="tecnico_asignado" placeholder="Técnico" class="color_formulario">
+                    <input type="text" id="repuestos" placeholder="Repuestos" class="color_formulario">
+                </div>
+                <div class="display_flex gap3">
+                    <button type="submit" class="verdef boton_admin cursor">Anotar Reparación</button>
+                    <button id="eliminarUltimoServ1" type="button" class="verdef boton_admin cursor">Eliminar Servicio</button>
+                </div>
+            </form>
+
+            <!-- Formulario Asesoramiento -->
+            <form id="formAsesoramiento" class="formulario oculto display_center column formProducto">
+            <h3 class="display_center padding-top1 white mayus bold">Asesoramiento Técnico</h3>
+            <div class="formCol column display_flex width65">
+                <input type="text" id="tema" placeholder="Tema del asesoramiento" class="color_formulario">
+                <input type="number" id="costo" placeholder="Costo" class="color_formulario">
+                <input type="number" id="duracion_estimada" placeholder="Duración" class="color_formulario">
+                <input type="text" id="tecnico_asignado" placeholder="Técnico" class="color_formulario">
+                <input type="text" id="imagen" placeholder="URL de imagen del tecnico" class="color_formulario">
+            </div>
+            <div class="display_flex gap3">
+                <button type="submit" class="verdef boton_admin cursor">Anotar Asesoramiento</button>
+                <button id="eliminarUltimoServ2" type="button" class="verdef boton_admin cursor">Eliminar Servicio</button>
+            </div>
+            </form>
+
+            <!-- Formulario Delivery -->
+            <form id="formDelivery" class="formulario oculto display_center column formProducto">
+            <h3 class="display_center padding-top1 white mayus bold">Delivery</h3>
+            <div class="formCol column display_flex width65">
+                <input type="text" id="producto_enviado" placeholder="Producto a entregar" class="color_formulario">
+                <input type="text" id="imagen" placeholder="URL de imagen del producto" class="color_formulario">
+                <input type="number" id="costo" placeholder="Costo" class="color_formulario">
+                <input type="number" id="duracion_estimada" placeholder="Duración" class="color_formulario">
+                <input type="text" id="tecnico_asignado" placeholder="Técnico" class="color_formulario">
+                <input type="text" id="direccionEntrega" placeholder="Dirección de entrega" class="color_formulario">
+            </div>
+            <div class="display_flex gap3">
+                <button type="submit" class="verdef boton_admin cursor">Anotar Envio</button>
+                <button id="eliminarUltimoServ3" type="button" class="verdef boton_admin cursor">Eliminar Servicio</button>
+            </div>
+            </form>
+            
+        </section>
+
+    </main>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/admin.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mi tienda de computacion</title>
+
+    <style>
+    </style>
+</head>
+<body>
+    <header class="header_total fondo_black">
+        <div class="display_flex padding-top1 h20 imagenes_header">
+            <img src="assets/images/dragon.png" class=" imgs ">
+            <img src="assets/images/dragon.png" class=" imgs ">
+            <img src="assets/images/logo1.png" class="img_logo  ">
+            <img src="assets/images/dragon.png" class=" imgs">
+            <img src="assets/images/dragon.png" class=" imgs">
+        </div>
+            <div class="botones display_flex linea_botones">
+                <button id="boton0" class="botones_color ">Seccion general</button>
+                <button id="boton1" class="botones_color">Notebooks</button>
+                <button id="boton2" class="botones_color">Monitores</button>   
+                <button id="boton3" class="botones_color">Servicio Tecnico</button>
+            </div>
+    </header>
+    <main >
+        <section id="seccion1" class="fondo_black seccion">
+            
+            <div id="todosProd" class="productos_conteiner display_center"></div>
+
+        </section>
+        <section id="seccion2" class="fondo_black seccion">
+            
+            <div id="notebooksContainer" class="productos_conteiner display_center"></div>
+
+        </section>
+        <section id="seccion3" class="fondo_black seccion">
+            
+            <div id="monitoresContainer" class="productos_conteiner display_center"></div>
+
+        </section>
+        <section id="seccion4" class="fondo_black seccion">
+            <div class="display_center centrar_servicios">
+                <div id="botones_servicios" class="display_flex stylebtn">
+                    <button id="boton_reparaciones" class="display_center boton_servicios cursor">Reparaciones</button>
+                    <button id="boton_asesoramientos" class="display_center boton_servicios cursor">Asesoramiento Técnico</button>
+                    <button id="boton_delivery" class="display_center boton_servicios cursor">Delivery</button>
+                </div>
+                <div id="serviciosConteiner" class="productos_conteiner display_center align_text column"></div>
+
+            </div>  
+        </section>
+    </main>
+    <footer id="footer" class="fondo_violeta display_center footer_texto">
+        <div class="display_center  column bold">
+            <p>CONTACTANOS</p>
+            <p>Nuestras oficinas están ubicadas en Remedios de Escalada de San Martín 3875 Floresta (CABA)</p>
+            <p>Nuestro local está ubicado en Florida 537 PA, Local 485 Microcentro (CABA)</p>
+
+        </div>
+
+    </footer>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/Dom-index.js"></script>
+
+</body>
+</html>
